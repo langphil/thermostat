@@ -18,8 +18,12 @@ Thermostat.prototype.down = function() {
     return;
   }
   this.temperature -= 1;
-}
+};
 
 Thermostat.prototype.isMinimum = function() {
   return this.temperature === this.MIN_TEMP;
-}
+};
+
+Thermostat.prototype.resetTemperature = function() {
+  this.temperature = 20
+};
