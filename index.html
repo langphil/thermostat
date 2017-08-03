@@ -6,10 +6,19 @@
     <script type="text/javascript" src="src/thermostat.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="http://www.favicon.cc/logo3d/842933.png"/>
   </head>
   <body>
-    <section>
+    <section class="container">
       <h1 class="temperature" id="temperature"></h1>
+      <h1>Current temperature: <span id="current-temperature">20</span></h1>
+      <select id="current-city" name="current city">
+        <option value="london">London</option>
+        <option value="berlin">Berlin</option>
+        <option value="nyc">New York City</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="dublin">Dublin</option>
+      </select>
       <p>
         <button id="temperature-up" type="button" name="Up">+</button>
         <button id="temperature-down" type="button" name="Down">-</button>
